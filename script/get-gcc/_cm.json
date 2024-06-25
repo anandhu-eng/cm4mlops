@@ -19,6 +19,16 @@
     "+CM_HOST_OS_DEFAULT_INCLUDE_PATH",
     "+PATH"
   ],
+  "prehook_deps": [
+    {
+      "enable_if_env": {
+        "CM_GCC_PREBUILT_INSTALL": [
+          "true"
+        ]
+      },
+      "tags": "install,prebuilt-gcc"
+    }
+  ],
   "deps": [
     {
       "tags": "detect,os"

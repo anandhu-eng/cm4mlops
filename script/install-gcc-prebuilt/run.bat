@@ -1,0 +1,9 @@
+@echo on
+
+echo %CM_GCC_DOWNLOAD_URL%  %CM_GCC_VERSION%
+wget -O %CM_GCC_VERSION%.zip %CM_GCC_DOWNLOAD_URL%
+IF %ERRORLEVEL% NEQ 0 EXIT %ERRORLEVEL%
+
+7z e %CM_GCC_VERSION%.zip
+
+echo "CM_GCC_BIN_WITH_PATH=$PWD/${CM_GCC_VERSION}/bin" > tmp-run-env.out

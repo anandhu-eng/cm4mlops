@@ -27,6 +27,9 @@ def preprocess(i):
                                            'run_script_input':i['run_script_input'],
                                            'recursion_spaces':recursion_spaces})
         if r['return'] >0 :
+            if os_info["platform"] == "windows":
+                env["CM_GCC_PREBUILT_INSTALL"] = "true"
+                print("Obtaining gcc prebuilt")
 #           if r['return'] == 16:
 #               if env.get('CM_TMP_FAIL_IF_NOT_FOUND','').lower() == 'yes':
 #                   return r
@@ -36,7 +39,8 @@ def preprocess(i):
 #               # Attempt to run installer
 #               r = {'return':0, 'skip':True, 'script':{'tags':'install,gcc,src'}}
 
-            return r
+            else:
+                return r
 
     return {'return':0}
 
