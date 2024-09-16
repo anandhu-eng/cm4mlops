@@ -744,6 +744,8 @@ class CAutomation(Automation):
         meta = script_artifact.meta
         path = script_artifact.path
 
+        env['CM_TMP_CURRENT_SCRIPT_PATH'] = path
+
         # Check min CM version requirement
         min_cm_version = meta.get('min_cm_version','').strip()
         if min_cm_version != '':
@@ -959,7 +961,6 @@ class CAutomation(Automation):
         # STEP 1100: Update deps from input
         r = update_deps_from_input(deps, post_deps, prehook_deps, posthook_deps, i)
         if r['return']>0: return r
-
 
         r = update_env_with_values(env)
         if r['return']>0: return r 
@@ -1328,8 +1329,6 @@ class CAutomation(Automation):
 
                         if "add_deps_recursive" in versions_meta:
                             self._merge_dicts_with_tags(add_deps_recursive, versions_meta['add_deps_recursive'])
-
-            env['CM_TMP_CURRENT_SCRIPT_PATH'] = path
 
             # Run chain of docker dependencies if current run cmd is from inside a docker container
             docker_deps = []
