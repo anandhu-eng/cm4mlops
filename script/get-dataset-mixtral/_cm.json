@@ -40,7 +40,8 @@
       "env":{
         "CM_RCLONE_WINDOWS_URL": "https://inference.mlcommons-storage.org/mixtral_8x7b%%2F2024.06.06_mixtral_15k_v4.pkl",
         "CM_RCLONE_LINUX_URL": "https://inference.mlcommons-storage.org/mixtral_8x7b%2F2024.06.06_mixtral_15k_v4.pkl",
-        "CM_DATASET_FILE_NAME": "2024.06.06_mixtral_15k_v4.pkl"
+        "CM_DATASET_FILE_NAME": "2024.06.06_mixtral_15k_v4.pkl",
+        "CM_DOWNLOAD_CHECKSUM": "78823c13e0e73e518872105c4b09628b"
       },
       "group": "download-source"
     }
