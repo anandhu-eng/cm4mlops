@@ -1121,7 +1121,7 @@ variations:
     - tags: get,generic-python-lib,_scikit-learn
     - tags: get,generic-python-lib,_tqdm
     - tags: get,generic-python-lib,_onnx
-    - tags: get,generic-python-lib,_iopath
+    - tags: get,generic-python-lib,_package.iopath
     - tags: get,generic-python-lib,_numpy
       names:
         - numpy
