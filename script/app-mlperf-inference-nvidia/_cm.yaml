@@ -162,7 +162,7 @@ deps:
       - dlrm-v2-99.9
     skip_if_any_env:
       DLRM_DATA_PATH:
-      - 'on'
+      - on
       CM_RUN_STATE_DOCKER:
       - 'yes'
     names:
