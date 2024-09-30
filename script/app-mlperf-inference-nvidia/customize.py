@@ -135,6 +135,8 @@ def preprocess(i):
 
     elif "dlrm-v2" in env['CM_MODEL']:
         model_name = "dlrm-v2"
+        if env['DLRM_DATA_PATH']:
+            env['CM_MLPERF_MODEL_DLRM_SKIP_DOWNLOAD'] = 'yes'
 
     elif env['CM_MODEL'] == "retinanet":
         #print(env)
