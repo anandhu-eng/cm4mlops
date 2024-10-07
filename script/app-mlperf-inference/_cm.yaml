@@ -1435,6 +1435,8 @@ variations:
     group:
       reproducibility
     add_deps_recursive:
+      inference-src:
+        tags: _r3.1
       nvidia-inference-common-code:
         version: r3.1
         tags: _ctuning
@@ -1453,6 +1455,8 @@ variations:
     group:
       reproducibility
     add_deps_recursive:
+      inference-src:
+        tags: _r4.0
       nvidia-inference-common-code:
         version: r3.1
         tags: _ctuning
@@ -1473,6 +1477,8 @@ variations:
     group:
       reproducibility
     add_deps_recursive:
+      inference-src:
+        tags: _r4.0
       nvidia-inference-common-code:
         version: r4.0
         tags: _go
@@ -1491,6 +1497,8 @@ variations:
     group:
       reproducibility
     add_deps_recursive:
+      inference-src:
+        tags: _r4.1
       nvidia-inference-common-code:
         version: r4.1
         tags: _go
