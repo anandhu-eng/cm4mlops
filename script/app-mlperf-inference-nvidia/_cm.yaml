@@ -118,7 +118,7 @@ deps:
 
   - enable_if_env:
       CM_MODEL:
-      - resnet50
+      - resnet50-disabled
     names:
       - imagenet-original
     tags: get,dataset,original,imagenet,_full
