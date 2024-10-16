@@ -596,7 +596,6 @@ variations:
       - mlperf-accuracy-script
       - imagenet-accuracy-script
       tags: run,accuracy,mlperf,_imagenet
-
     docker:
       deps:
       - tags: get,dataset,imagenet,validation,original,_full
